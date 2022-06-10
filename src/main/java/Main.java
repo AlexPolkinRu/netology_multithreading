@@ -1,4 +1,5 @@
 /**
+ * Решение multithreading_task1 в ветке task1
  * @author Aleksandr Polochkin
  * 10.06.2022
  */
