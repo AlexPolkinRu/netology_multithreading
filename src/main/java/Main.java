@@ -6,6 +6,8 @@
 public class Main {
     public static void main(String[] args) {
 
+        final int DELAY = 15_000;
+
         long startTime = System.currentTimeMillis();
 
         ThreadGroup mainGroup = new ThreadGroup("main group");
@@ -20,9 +22,14 @@ public class Main {
         thread3.start();
         thread4.start();
 
-        while (System.currentTimeMillis() - startTime < 15_000) {}
-
-        mainGroup.interrupt();
+        try {
+            Thread.sleep(DELAY);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        finally {
+            mainGroup.interrupt();
+        }
 
     }
 }
