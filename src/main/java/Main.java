@@ -3,6 +3,8 @@ import java.util.List;
 import java.util.concurrent.*;
 
 /**
+ * Решение multithreading_task2 в ветке task2
+ *
  * @author Aleksandr Polochkin
  * 02.06.2022
  */
@@ -21,7 +23,7 @@ public class Main {
         Thread.sleep(15000);
         executorService.shutdownNow();
 
-        for(Future<Integer> future : futureTask) {
+        for (Future<Integer> future : futureTask) {
             System.out.println(future.get());
         }
 
