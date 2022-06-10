@@ -19,7 +19,6 @@ public class Main {
         }
 
         Thread.sleep(15000);
-
         executorService.shutdownNow();
 
         for(Future<Integer> future : futureTask) {
