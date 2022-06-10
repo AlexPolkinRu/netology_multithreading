@@ -1,5 +1,6 @@
 /**
  * Решение multithreading_task1 в ветке task1
+ *
  * @author Aleksandr Polochkin
  * 10.06.2022
  */
@@ -27,8 +28,7 @@ public class Main {
             Thread.sleep(DELAY);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             mainGroup.interrupt();
         }
 
