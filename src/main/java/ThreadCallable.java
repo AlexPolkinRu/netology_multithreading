@@ -38,3 +38,4 @@ public class ThreadCallable implements Callable<String> {
         return Thread.currentThread().getName() + " вывел сообщения " + counterMsg + " раз";
     }
 }
+
