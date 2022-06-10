@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class SomeThread extends Thread {
 
-    final int DELAY = 2000 + new Random().nextInt(1000);
+    private final int DELAY = 2000 + new Random().nextInt(1000);
 
     @Override
     public void run() {
