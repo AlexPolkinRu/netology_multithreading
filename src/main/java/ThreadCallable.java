@@ -8,7 +8,7 @@ import java.util.concurrent.Callable;
 
 public class ThreadCallable implements Callable {
 
-    private final int delay = new Random().nextInt(1000) + 2000;
+    private final int DELAY = new Random().nextInt(1000) + 2000;
     private int counterMsg = 0;
     private final String name;
 
@@ -26,7 +26,7 @@ public class ThreadCallable implements Callable {
 
                 counterMsg++;
 
-                Thread.sleep(delay);
+                Thread.sleep(DELAY);
 
             }
         } catch (InterruptedException e) {
