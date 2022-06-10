@@ -6,9 +6,9 @@ import java.util.concurrent.Callable;
  * 02.06.2022
  */
 
-public class ThreadCallable implements Callable {
+public class ThreadCallable implements Callable<String> {
 
-    private final int DELAY = new Random().nextInt(1000) + 2000;
+    private final int DELAY = 2000 + new Random().nextInt(1000);
     private int counterMsg = 0;
     private final String name;
 
