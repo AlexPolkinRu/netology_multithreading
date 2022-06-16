@@ -30,7 +30,7 @@ public class ThreadCallable implements Callable<String> {
 
             }
         } catch (InterruptedException e) {
-            System.out.println("Выполнение потока прервано: " + e);
+            System.out.println("Выполнение задачи прервано: " + e);
         } finally {
             System.out.println(Thread.currentThread().getName() + " завершён");
         }

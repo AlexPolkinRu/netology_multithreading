@@ -15,7 +15,7 @@ public class Main {
         ExecutorService executorService = Executors.newFixedThreadPool(4);
         List<Future<String>> futureTask = new ArrayList<>();
         for (int i = 1; i <= 4; i++) {
-            futureTask.add(executorService.submit(new ThreadCallable("Поток" + i)));
+            futureTask.add(executorService.submit(new ThreadCallable("Task" + i)));
         }
 
         Thread.sleep(15000);
