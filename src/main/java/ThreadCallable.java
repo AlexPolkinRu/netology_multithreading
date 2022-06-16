@@ -22,9 +22,8 @@ public class ThreadCallable implements Callable<String> {
         try {
             while (!Thread.currentThread().isInterrupted()) {
 
-                System.out.println("Я " + Thread.currentThread().getName() + ". Всем привет!");
-
                 counterMsg++;
+                System.out.println("Я " + Thread.currentThread().getName() + ". Сообщение " + counterMsg);
 
                 Thread.sleep(DELAY);
 
